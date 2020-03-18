@@ -1,0 +1,45 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "@noths",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:cypress/recommended"
+  ],
+  "plugins": ["@typescript-eslint/eslint-plugin", "cypress"],
+  "rules": {
+    "import/prefer-default-export": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-filename-extension": 0,
+    "react/prop-types": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/destructuring-assignment": 0,
+    "react/jsx-props-no-spreading": 0,
+    "class-methods-use-this": 0,
+    "react/require-default-props": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/camelcase": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "import/extensions": 0
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "cypress/globals": true
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx", ".js", ".jsx"]
+    },
+    "import/resolver": {
+      "typescript": {},
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}

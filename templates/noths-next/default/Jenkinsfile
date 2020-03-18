@@ -1,0 +1,12 @@
+nodePipeline(
+  channel: '#team6-cafe',
+  node: '10',
+  qaReady: true,
+  stagingReady: true,
+  productionReady: true,
+  featureTests: true,
+  visualRegression: true,
+  staticFilesDir: 'build',
+  assetsPath: '_next/public',
+  artifactPaths: 'cypress/screenshots/**,cypress/videos/**'
+)

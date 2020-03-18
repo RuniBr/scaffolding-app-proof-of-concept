@@ -1,0 +1,12 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "fixturesFolder": false,
+  "chromeWebSecurity": false,
+  "blacklistHosts": [
+    "*googletagmanager*"
+  ],
+  "video": false,
+  "env": {
+    "RETRIES": 2
+  }
+}
